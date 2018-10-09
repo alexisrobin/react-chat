@@ -5,7 +5,7 @@ import Message, { convertDateFromISOStringToReadableString } from './Message';
 
 const message = {
     content: "testing message",
-    timestamp: new Date().toISOString()
+    timestamp: "2016-10-30T10:28:05"
 };
 
 describe('<Message />', () => {
