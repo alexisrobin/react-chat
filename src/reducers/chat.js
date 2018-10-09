@@ -1,6 +1,6 @@
 import * as types from '../constants/actionTypes';
-import { messages } from '../shared/messages';
-import { users } from '../shared/users';
+import { messages } from '../constants/messages';
+import { users } from '../constants/users';
 
 const initialState = {
     messages: messages,
