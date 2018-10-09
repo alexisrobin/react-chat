@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Message /> should match its reference snapshot 1`] = `
+<Container
+  tag="div"
+>
+  <Row
+    className="message-content rounded p-2"
+    style={
+      Object {
+        "backgroundColor": undefined,
+        "color": undefined,
+      }
+    }
+    tag="div"
+  >
+    testing message
+  </Row>
+  <Row
+    className="message-timestamp"
+    tag="div"
+  >
+    <Col
+      className="text-right"
+      tag="div"
+      widths={
+        Array [
+          "xs",
+          "sm",
+          "md",
+          "lg",
+          "xl",
+        ]
+      }
+    >
+      sent by 
+      Max
+       - 
+      Oct 09, 2018, 11:37 AM
+    </Col>
+  </Row>
+</Container>
+`;
