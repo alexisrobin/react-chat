@@ -24,7 +24,8 @@ class Conversation extends Component {
      * Scroll to conversation latest message.
      */
     scrollToLatestMessage = () => {
-        this.conversationBottom.scrollIntoView();
+        if(this.conversationBottom)
+            this.conversationBottom.scrollIntoView();
     }
 
     componentDidMount() {
