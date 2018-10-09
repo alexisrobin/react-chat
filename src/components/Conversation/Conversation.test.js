@@ -11,7 +11,8 @@ describe('<Conversation />', () => {
         const wrapper = render(
             <Conversation
                 messages={messages}
-                users={users} />
+                users={users}
+                currentUserId={1} />
         );
 
         expect(wrapper).to.matchSnapshot()

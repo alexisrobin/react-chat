@@ -10,7 +10,8 @@ class App extends Component {
         <h1>react-chat</h1>
         <Conversation
           messages={messages}
-          users={users} />
+          users={users}
+          currentUserId={1}/>
       </div>
     );
   }

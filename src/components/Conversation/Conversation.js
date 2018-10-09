@@ -10,9 +10,6 @@ class Conversation extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {
-            currentUser: 1
-        }
 
         // Sort messages by timestamp
         this.messages = this.props.messages.sort(function (a, b) {
@@ -44,13 +41,13 @@ class Conversation extends Component {
                         return (
                             <Media tag="li"
                                 key={message.id}
-                                className={message.senderId === this.state.currentUser ? "justify-content-end" : "justify-content-start"}>
+                                className={message.senderId === this.props.currentUserId ? "justify-content-end" : "justify-content-start"}>
                                 <div>
                                     <Message
                                         message={message}
                                         senderName={this.props.users.filter(user => user.id === message.senderId).map(user => user.name)}
-                                        bgColor={message.senderId === this.state.currentUser ? "#18c74e" : "#dddddd"}
-                                        color={message.senderId === this.state.currentUser ? "white" : "black"}/>
+                                        bgColor={message.senderId === this.props.currentUserId ? "#18c74e" : "#dddddd"}
+                                        color={message.senderId === this.props.currentUserId ? "white" : "black"}/>
                                 </div>
                             </Media>
                         )
