@@ -23,3 +23,4 @@ const chat = (state = initialState, action) => {
 }
 
 export default chat;
+export { initialState };
