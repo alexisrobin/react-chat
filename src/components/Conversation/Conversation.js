@@ -3,20 +3,13 @@ import './Conversation.scss';
 import { Media } from 'reactstrap';
 import Message from '../Message/Message';
 
+// Sort array by timestamp property;
+const sortByTimestamp = (array) => array.sort((a, b) => new Date(a.timestamp) - new Date(b.timestamp));
+
 /**
  * Message's list from a user to others.
  */
 class Conversation extends Component {
-
-    constructor(props) {
-        super(props);
-
-        // Sort messages by timestamp
-        this.messages = this.props.messages.sort(function (a, b) {
-            return new Date(a.timestamp) - new Date(b.timestamp);
-        });
-    }
-
     /**
      * Scroll to conversation latest message.
      */
@@ -37,7 +30,7 @@ class Conversation extends Component {
         return (
             <div className="conversation">
                 <Media list className="p-0">
-                    {this.messages.map((message) => {
+                    {sortByTimestamp(this.props.messages).map((message) => {
                         return (
                             <Media tag="li"
                                 key={message.id}
