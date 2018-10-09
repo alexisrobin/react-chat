@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Conversation.scss';
 import { Media } from 'reactstrap';
-import Message from './Message';
+import Message from '../Message/Message';
 
 /**
  * Message's list from a user to others.
