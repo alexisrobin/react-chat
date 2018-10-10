@@ -1,0 +1,8 @@
+@import '../../const.scss';
+
+.chat-header {
+    border-bottom: 1px #ddd solid;
+    justify-content: center;
+    color: $secondary;
+    font-size: 2.5rem;
+}

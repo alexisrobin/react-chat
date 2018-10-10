@@ -10,12 +10,12 @@ const sortByTimestamp = array => array.sort((a, b) => new Date(a.timestamp) - ne
  * Message's list from a user to others.
  */
 class Conversation extends Component {
+    
     /**
      * Scroll to conversation latest message.
      */
     scrollToLatestMessage = () => {
-        if (this.conversationBottom)
-            this.conversationBottom.scrollIntoView();
+        this.conversationBottom.parentNode.scrollTop = this.conversationBottom.offsetTop;
     }
 
     componentDidMount() {
@@ -39,15 +39,13 @@ class Conversation extends Component {
                                     <Message
                                         message={message}
                                         sender={this.props.users.filter(user => user.id === message.senderId).shift()}
-                                        currentUserId={this.props.currentUserId}/>
+                                        currentUserId={this.props.currentUserId} />
                                 </div>
                             </Media>
                         )
                     })}
                 </Media>
-                <div style={{ float: "left", clear: "both" }}
-                    ref={(el) => { this.conversationBottom = el; }}>
-                </div>
+                <div ref={(el) => { this.conversationBottom = el; }}></div>
             </div>
         )
     }

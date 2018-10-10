@@ -16,7 +16,6 @@ exports[`<MessageInput /> should match its reference snapshot 1`] = `
       tag="div"
     >
       <Col
-        sm={10}
         tag="div"
         widths={
           Array [
@@ -41,7 +40,6 @@ exports[`<MessageInput /> should match its reference snapshot 1`] = `
         />
       </Col>
       <Col
-        sm={2}
         tag="div"
         widths={
           Array [
@@ -62,7 +60,7 @@ exports[`<MessageInput /> should match its reference snapshot 1`] = `
           type="submit"
         >
           <span
-            className="fa fa-rocket fa-2x"
+            className="fa fa-rocket fa-lg"
           />
         </Button>
       </Col>
