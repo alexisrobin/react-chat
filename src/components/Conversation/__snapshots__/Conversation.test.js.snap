@@ -34,7 +34,7 @@ exports[`<Conversation /> should match its reference snapshot 1`] = `
                 <div
                   class="col"
                 >
-                  sent by Dagobert - Feb 09, 2014, 8:32 AM
+                  sent by Chat A - Feb 09, 2014, 8:32 AM
                 </div>
               </div>
             </div>
@@ -69,7 +69,7 @@ exports[`<Conversation /> should match its reference snapshot 1`] = `
                 <div
                   class="col"
                 >
-                  sent by Dagobert - Jan 05, 2015, 5:24 AM
+                  sent by Chat A - Jan 05, 2015, 5:24 AM
                 </div>
               </div>
             </div>
@@ -104,7 +104,7 @@ exports[`<Conversation /> should match its reference snapshot 1`] = `
                 <div
                   class="col"
                 >
-                  sent by Childebert - Jan 22, 2015, 9:12 AM
+                  sent by Chat B - Jan 22, 2015, 9:12 AM
                 </div>
               </div>
             </div>
@@ -139,7 +139,7 @@ exports[`<Conversation /> should match its reference snapshot 1`] = `
                 <div
                   class="col"
                 >
-                  sent by Childebert - Feb 24, 2015, 3:42 AM
+                  sent by Chat B - Feb 24, 2015, 3:42 AM
                 </div>
               </div>
             </div>
@@ -174,7 +174,7 @@ exports[`<Conversation /> should match its reference snapshot 1`] = `
                 <div
                   class="col"
                 >
-                  sent by Childebert - May 02, 2015, 11:58 AM
+                  sent by Chat B - May 02, 2015, 11:58 AM
                 </div>
               </div>
             </div>
@@ -209,7 +209,7 @@ exports[`<Conversation /> should match its reference snapshot 1`] = `
                 <div
                   class="col"
                 >
-                  sent by Childebert - Aug 20, 2015, 12:17 PM
+                  sent by Chat B - Aug 20, 2015, 12:17 PM
                 </div>
               </div>
             </div>
@@ -244,7 +244,7 @@ exports[`<Conversation /> should match its reference snapshot 1`] = `
                 <div
                   class="col"
                 >
-                  sent by Dagobert - Jan 01, 2016, 10:05 AM
+                  sent by Chat A - Jan 01, 2016, 10:05 AM
                 </div>
               </div>
             </div>
@@ -279,7 +279,7 @@ exports[`<Conversation /> should match its reference snapshot 1`] = `
                 <div
                   class="col"
                 >
-                  sent by Dagobert - Feb 06, 2016, 7:55 AM
+                  sent by Chat A - Feb 06, 2016, 7:55 AM
                 </div>
               </div>
             </div>
@@ -314,7 +314,7 @@ exports[`<Conversation /> should match its reference snapshot 1`] = `
                 <div
                   class="col"
                 >
-                  sent by Dagobert - Apr 29, 2016, 5:57 AM
+                  sent by Chat A - Apr 29, 2016, 5:57 AM
                 </div>
               </div>
             </div>
@@ -349,7 +349,7 @@ exports[`<Conversation /> should match its reference snapshot 1`] = `
                 <div
                   class="col"
                 >
-                  sent by Childebert - Jun 25, 2016, 11:16 AM
+                  sent by Chat B - Jun 25, 2016, 11:16 AM
                 </div>
               </div>
             </div>
@@ -384,7 +384,7 @@ exports[`<Conversation /> should match its reference snapshot 1`] = `
                 <div
                   class="col"
                 >
-                  sent by Childebert - Jul 04, 2016, 11:24 AM
+                  sent by Chat B - Jul 04, 2016, 11:24 AM
                 </div>
               </div>
             </div>
@@ -419,7 +419,7 @@ exports[`<Conversation /> should match its reference snapshot 1`] = `
                 <div
                   class="col"
                 >
-                  sent by Dagobert - Oct 30, 2016, 10:28 AM
+                  sent by Chat A - Oct 30, 2016, 10:28 AM
                 </div>
               </div>
             </div>
@@ -454,7 +454,7 @@ exports[`<Conversation /> should match its reference snapshot 1`] = `
                 <div
                   class="col"
                 >
-                  sent by Dagobert - Apr 16, 2017, 9:37 AM
+                  sent by Chat A - Apr 16, 2017, 9:37 AM
                 </div>
               </div>
             </div>
@@ -489,7 +489,7 @@ exports[`<Conversation /> should match its reference snapshot 1`] = `
                 <div
                   class="col"
                 >
-                  sent by Dagobert - Dec 11, 2017, 11:11 AM
+                  sent by Chat A - Dec 11, 2017, 11:11 AM
                 </div>
               </div>
             </div>
@@ -524,7 +524,7 @@ exports[`<Conversation /> should match its reference snapshot 1`] = `
                 <div
                   class="col"
                 >
-                  sent by Dagobert - Jan 27, 2018, 12:15 PM
+                  sent by Chat A - Jan 27, 2018, 12:15 PM
                 </div>
               </div>
             </div>
@@ -559,7 +559,7 @@ exports[`<Conversation /> should match its reference snapshot 1`] = `
                 <div
                   class="col"
                 >
-                  sent by Childebert - Mar 30, 2018, 8:28 AM
+                  sent by Chat B - Mar 30, 2018, 8:28 AM
                 </div>
               </div>
             </div>

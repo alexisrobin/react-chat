@@ -16,7 +16,6 @@ exports[`<MessageInput /> should match its reference snapshot 1`] = `
       tag="div"
     >
       <Col
-        md={9}
         tag="div"
         widths={
           Array [
@@ -27,6 +26,7 @@ exports[`<MessageInput /> should match its reference snapshot 1`] = `
             "xl",
           ]
         }
+        xs={9}
       >
         <DefaultConnectedControlTextArea
           className="form-control message-textarea"
@@ -40,7 +40,6 @@ exports[`<MessageInput /> should match its reference snapshot 1`] = `
         />
       </Col>
       <Col
-        md={3}
         tag="div"
         widths={
           Array [
@@ -51,6 +50,7 @@ exports[`<MessageInput /> should match its reference snapshot 1`] = `
             "xl",
           ]
         }
+        xs={3}
       >
         <Button
           className="w-100 h-100"

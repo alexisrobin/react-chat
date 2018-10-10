@@ -22,7 +22,6 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>react-chat</h1>
         <MirrorChat
           messages={this.props.chat.messages}
           users={this.props.chat.users}
