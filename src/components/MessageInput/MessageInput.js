@@ -26,7 +26,7 @@ class MessageInput extends Component {
                     onSubmit={(values) => this.handleSubmit(values)}
                     getDispatch={(dispatch) => this.formDispatch = dispatch}>
                     <Row className="form-group">
-                        <Col sm={10} xs={9}>
+                        <Col md={9}>
                             <Control.textarea
                                 model=".message"
                                 className="form-control message-textarea"
@@ -35,9 +35,9 @@ class MessageInput extends Component {
                                     required
                                 }} />
                         </Col>
-                        <Col sm={2} xs={3}>
+                        <Col md={3}>
                             <Button outline type="submit" color="secondary" className="w-100 h-100">
-                                <span className="fa fa-rocket fa-2x"></span>
+                                <span className="fa fa-rocket fa-lg"></span>
                             </Button>
                         </Col>
                     </Row>
