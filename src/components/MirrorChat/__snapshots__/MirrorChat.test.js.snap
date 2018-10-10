@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MirrorChat /> should match its reference snapshot 1`] = `
+<Container
+  tag="div"
+>
+  <Row
+    tag="div"
+  >
+    <Col
+      md={6}
+      tag="div"
+      widths={
+        Array [
+          "xs",
+          "sm",
+          "md",
+          "lg",
+          "xl",
+        ]
+      }
+    >
+      <Chat
+        currentUserId={1}
+      />
+    </Col>
+    <Col
+      md={6}
+      tag="div"
+      widths={
+        Array [
+          "xs",
+          "sm",
+          "md",
+          "lg",
+          "xl",
+        ]
+      }
+    >
+      <Chat
+        currentUserId={2}
+      />
+    </Col>
+  </Row>
+</Container>
+`;
