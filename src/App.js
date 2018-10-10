@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { addMessage } from './actions';
-import Conversation from './components/Conversation/Conversation';
+import Chat from './components/Chat';
 
 const mapStateToProps = state => {
   return {
@@ -25,10 +25,11 @@ class App extends Component {
     return (
       <div className="App">
         <h1>react-chat</h1>
-        <Conversation
+        <Chat
           messages={this.props.chat.messages}
           users={this.props.chat.users}
-          currentUserId={1}/>
+          currentUserId={1}
+          addMessage={this.props.addMessage}/>
       </div>
     );
   }

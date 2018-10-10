@@ -1,5 +1,23 @@
-.message-content {
-    background-color: #ddd;
+@import '../../const.scss';
+
+.message-sent {
+    .message-content {
+        background-color: $primary;
+        color: white;
+    }
+    .message-timestamp {
+        text-align: right;
+    }
+}
+
+.message-received {
+    .message-content {
+        background-color: #ddd;
+        color: black;
+    }
+    .message-timestamp {
+        text-align: left;
+    }
 }
 
 .message-timestamp {

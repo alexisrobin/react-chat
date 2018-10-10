@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MessageInput /> should match its reference snapshot 1`] = `
+<Container
+  className="p-1"
+  tag="div"
+>
+  <LocalForm
+    getDispatch={[Function]}
+    initialState={Object {}}
+    model="local"
+    onSubmit={[Function]}
+  >
+    <Row
+      className="form-group"
+      tag="div"
+    >
+      <Col
+        sm={10}
+        tag="div"
+        widths={
+          Array [
+            "xs",
+            "sm",
+            "md",
+            "lg",
+            "xl",
+          ]
+        }
+        xs={9}
+      >
+        <DefaultConnectedControlTextArea
+          className="form-control message-textarea"
+          color="secondary"
+          model=".message"
+          validators={
+            Object {
+              "required": [Function],
+            }
+          }
+        />
+      </Col>
+      <Col
+        sm={2}
+        tag="div"
+        widths={
+          Array [
+            "xs",
+            "sm",
+            "md",
+            "lg",
+            "xl",
+          ]
+        }
+        xs={3}
+      >
+        <Button
+          className="w-100 h-100"
+          color="secondary"
+          outline={true}
+          tag="button"
+          type="submit"
+        >
+          <span
+            className="fa fa-rocket fa-2x"
+          />
+        </Button>
+      </Col>
+    </Row>
+  </LocalForm>
+</Container>
+`;
