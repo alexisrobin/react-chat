@@ -30,12 +30,13 @@ class MessageInput extends Component {
                             <Control.textarea
                                 model=".message"
                                 className="form-control message-textarea"
+                                color="secondary"
                                 validators={{
                                     required
                                 }} />
                         </Col>
                         <Col xs={2}>
-                                <Button type="submit" color="primary" className="w-100 h-100">Send</Button>
+                                <Button outline type="submit" color="secondary" className="w-100 h-100">Send</Button>
                             </Col>
                     </Row>
                 </LocalForm>

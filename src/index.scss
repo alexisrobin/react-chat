@@ -12,3 +12,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+$primary: #18c74e;
+$secondary: #55c718;
+
+@import 'bootstrap/scss/bootstrap.scss';
+
