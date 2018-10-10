@@ -13,12 +13,6 @@ const mapDispatchToProps = dispatch => ({
 
 class App extends Component {
 
-  componentDidMount() {
-    setTimeout(() => {
-      this.props.addMessage("salut", 1);
-    }, 2000);
-  }
-
   render() {
     return (
       <div className="App">
@@ -29,6 +23,7 @@ class App extends Component {
       </div>
     );
   }
+  
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);
