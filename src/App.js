@@ -28,7 +28,8 @@ class App extends Component {
         <Chat
           messages={this.props.chat.messages}
           users={this.props.chat.users}
-          currentUserId={1}/>
+          currentUserId={1}
+          addMessage={this.props.addMessage}/>
       </div>
     );
   }
