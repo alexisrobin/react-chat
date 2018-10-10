@@ -3,8 +3,8 @@ import { expect } from 'chai'
 import { shallow, render } from 'enzyme'
 import Conversation from './Conversation';
 import Message from '../Message/Message';
-import { messages } from '../../shared/messages'
-import { users } from '../../shared/users'
+import { messages } from '../../constants/messages'
+import { users } from '../../constants/users'
 
 describe('<Conversation />', () => {
     it('should match its reference snapshot', () => {
