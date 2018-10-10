@@ -13,8 +13,6 @@ code {
     monospace;
 }
 
-$primary: #18c74e;
-$secondary: #55c718;
-
+@import './const.scss';
 @import 'bootstrap/scss/bootstrap.scss';
 

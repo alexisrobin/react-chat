@@ -38,9 +38,9 @@ class Conversation extends Component {
                                 <div>
                                     <Message
                                         message={message}
-                                        senderName={this.props.users.filter(user => user.id === message.senderId).map(user => user.name)}
-                                        bgColor={message.senderId === this.props.currentUserId ? "#18c74e" : "#dddddd"}
-                                        color={message.senderId === this.props.currentUserId ? "white" : "black"}/>
+                                        sender={this.props.users.filter(user => user.id === message.senderId).shift()}
+                                        currentUserId={this.props.currentUserId}
+                                        />
                                 </div>
                             </Media>
                         )

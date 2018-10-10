@@ -5,7 +5,10 @@ import { Container, Row, Col } from 'reactstrap';
 const convertDateFromISOStringToReadableString = ISOString =>
     new Intl.DateTimeFormat('en-US', { hour: '2-digit', minute: '2-digit', year: 'numeric', month: 'short', day: '2-digit' }).format(new Date(Date.parse(ISOString)));
 
-const Message = ({ message, senderName, bgColor, color }) => {
+/**
+ * Basic chat's message adapting it's view depending of its nature (sent, received).
+ */
+const Message = ({ message, sender, currentUserId }) => {
     if(!message) {
         return (
             <div className="message-unreadable">
@@ -15,17 +18,13 @@ const Message = ({ message, senderName, bgColor, color }) => {
     }
     else
         return (
-            <Container>
-                <Row className="message-content rounded p-2"
-                    style={{
-                        backgroundColor: bgColor,
-                        color: color
-                    }}>
+            <Container className={sender.id === currentUserId ? "message-sent" : "message-received"}>
+                <Row className="message-content rounded p-2">
                     {message.content}
                 </Row>
                 <Row className="message-timestamp">
-                    <Col className="text-right">
-                        sent by {senderName} - {convertDateFromISOStringToReadableString(message.timestamp)}
+                    <Col>
+                        sent by {sender.name} - {convertDateFromISOStringToReadableString(message.timestamp)}
                     </Col>
                 </Row>
             </Container>

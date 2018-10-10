@@ -8,12 +8,17 @@ const message = {
     timestamp: "2016-10-30T10:28:05"
 };
 
+const sender = {
+    id: 1,
+    name: "Max"
+}
+
 describe('<Message />', () => {
     it('should match its reference snapshot', () => {
         const wrapper = shallow(
             <Message
                 message={message}
-                senderName={"Max"} />
+                sender={sender} />
         );
 
         expect(wrapper).to.matchSnapshot()
@@ -23,7 +28,7 @@ describe('<Message />', () => {
         const wrapper = shallow(
             <Message
                 message={message}
-                senderName={"Max"} />
+                sender={sender} />
         );
 
         expect(wrapper.contains(message.content)).to.equal(true);

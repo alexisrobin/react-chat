@@ -2,16 +2,11 @@
 
 exports[`<Message /> should match its reference snapshot 1`] = `
 <Container
+  className="message-received"
   tag="div"
 >
   <Row
     className="message-content rounded p-2"
-    style={
-      Object {
-        "backgroundColor": undefined,
-        "color": undefined,
-      }
-    }
     tag="div"
   >
     testing message
@@ -21,7 +16,6 @@ exports[`<Message /> should match its reference snapshot 1`] = `
     tag="div"
   >
     <Col
-      className="text-right"
       tag="div"
       widths={
         Array [
