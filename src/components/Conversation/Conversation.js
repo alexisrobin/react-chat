@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import './Conversation.scss';
 import { Media } from 'reactstrap';
-import Message from '../Message/Message';
+import Message from '../Message';
 
 // Sort array by timestamp property;
-const sortByTimestamp = (array) => array.sort((a, b) => new Date(a.timestamp) - new Date(b.timestamp));
+const sortByTimestamp = array => array.sort((a, b) => new Date(a.timestamp) - new Date(b.timestamp));
 
 /**
  * Message's list from a user to others.
