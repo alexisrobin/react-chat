@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Chat /> should match its reference snapshot 1`] = `
+<Container
+  tag="div"
+>
+  <Row
+    tag="div"
+  >
+    <Conversation />
+  </Row>
+  <Row
+    tag="div"
+  >
+    <MessageInput />
+  </Row>
+</Container>
+`;
