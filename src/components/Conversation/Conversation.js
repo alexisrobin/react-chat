@@ -29,13 +29,13 @@ class Conversation extends Component {
     render() {
         return (
             <div className="conversation">
-                <Media list className="p-0">
+                <Media list className="p-1">
                     {sortByTimestamp(this.props.messages).map((message) => {
                         return (
                             <Media tag="li"
                                 key={message.id}
                                 className={message.senderId === this.props.currentUserId ? "justify-content-end" : "justify-content-start"}>
-                                <div>
+                                <div className="p-1">
                                     <Message
                                         message={message}
                                         sender={this.props.users.filter(user => user.id === message.senderId).shift()}
