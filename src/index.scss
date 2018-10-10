@@ -15,4 +15,5 @@ code {
 
 @import './const.scss';
 @import 'bootstrap/scss/bootstrap.scss';
-
+$fa-font-path: "~font-awesome/fonts";
+@import "~font-awesome/scss/font-awesome";

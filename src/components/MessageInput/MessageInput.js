@@ -21,12 +21,12 @@ class MessageInput extends Component {
 
     render() {
         return (
-            <Container className="p-0">
+            <Container className="p-1">
                 <LocalForm
                     onSubmit={(values) => this.handleSubmit(values)}
                     getDispatch={(dispatch) => this.formDispatch = dispatch}>
                     <Row className="form-group">
-                        <Col xs={10}>
+                        <Col sm={10} xs={9}>
                             <Control.textarea
                                 model=".message"
                                 className="form-control message-textarea"
@@ -35,14 +35,16 @@ class MessageInput extends Component {
                                     required
                                 }} />
                         </Col>
-                        <Col xs={2}>
-                                <Button outline type="submit" color="secondary" className="w-100 h-100">Send</Button>
-                            </Col>
+                        <Col sm={2} xs={3}>
+                            <Button outline type="submit" color="secondary" className="w-100 h-100">
+                                <span className="fa fa-rocket fa-2x"></span>
+                            </Button>
+                        </Col>
                     </Row>
                 </LocalForm>
             </Container>
-                )
-            }
-        }
-        
+        )
+    }
+}
+
 export default MessageInput;
