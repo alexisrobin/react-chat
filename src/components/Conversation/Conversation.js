@@ -14,7 +14,7 @@ class Conversation extends Component {
      * Scroll to conversation latest message.
      */
     scrollToLatestMessage = () => {
-        if(this.conversationBottom)
+        if (this.conversationBottom)
             this.conversationBottom.scrollIntoView();
     }
 
@@ -39,8 +39,7 @@ class Conversation extends Component {
                                     <Message
                                         message={message}
                                         sender={this.props.users.filter(user => user.id === message.senderId).shift()}
-                                        currentUserId={this.props.currentUserId}
-                                        />
+                                        currentUserId={this.props.currentUserId}/>
                                 </div>
                             </Media>
                         )

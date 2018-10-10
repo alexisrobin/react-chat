@@ -1,37 +1,52 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Message /> should match its reference snapshot 1`] = `
-<Container
-  className="message-received"
-  tag="div"
+<y
+  appear={true}
+  delay={0}
+  duration={500}
+  fadeProps={Object {}}
+  in={true}
+  timingFn="ease"
+  transformProps={
+    Object {
+      "enterTransform": "translateX(0px)",
+      "exitTransform": "translateX(100px)",
+    }
+  }
 >
-  <Row
-    className="message-content rounded p-2"
+  <Container
+    className="message-received"
     tag="div"
   >
-    testing message
-  </Row>
-  <Row
-    className="message-timestamp"
-    tag="div"
-  >
-    <Col
+    <Row
+      className="message-content rounded p-2"
       tag="div"
-      widths={
-        Array [
-          "xs",
-          "sm",
-          "md",
-          "lg",
-          "xl",
-        ]
-      }
     >
-      sent by 
-      Max
-       - 
-      Oct 30, 2016, 10:28 AM
-    </Col>
-  </Row>
-</Container>
+      testing message
+    </Row>
+    <Row
+      className="message-timestamp"
+      tag="div"
+    >
+      <Col
+        tag="div"
+        widths={
+          Array [
+            "xs",
+            "sm",
+            "md",
+            "lg",
+            "xl",
+          ]
+        }
+      >
+        sent by 
+        Max
+         - 
+        Oct 30, 2016, 10:28 AM
+      </Col>
+    </Row>
+  </Container>
+</y>
 `;

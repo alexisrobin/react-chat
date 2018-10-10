@@ -2,7 +2,7 @@
 
 exports[`<MessageInput /> should match its reference snapshot 1`] = `
 <Container
-  className="p-0"
+  className="p-1"
   tag="div"
 >
   <LocalForm
@@ -16,6 +16,7 @@ exports[`<MessageInput /> should match its reference snapshot 1`] = `
       tag="div"
     >
       <Col
+        sm={10}
         tag="div"
         widths={
           Array [
@@ -26,7 +27,7 @@ exports[`<MessageInput /> should match its reference snapshot 1`] = `
             "xl",
           ]
         }
-        xs={10}
+        xs={9}
       >
         <DefaultConnectedControlTextArea
           className="form-control message-textarea"
@@ -40,6 +41,7 @@ exports[`<MessageInput /> should match its reference snapshot 1`] = `
         />
       </Col>
       <Col
+        sm={2}
         tag="div"
         widths={
           Array [
@@ -50,7 +52,7 @@ exports[`<MessageInput /> should match its reference snapshot 1`] = `
             "xl",
           ]
         }
-        xs={2}
+        xs={3}
       >
         <Button
           className="w-100 h-100"
@@ -59,7 +61,9 @@ exports[`<MessageInput /> should match its reference snapshot 1`] = `
           tag="button"
           type="submit"
         >
-          Send
+          <span
+            className="fa fa-rocket fa-2x"
+          />
         </Button>
       </Col>
     </Row>
