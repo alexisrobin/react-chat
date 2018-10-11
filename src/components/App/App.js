@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { addMessage } from './actions';
-import MirrorChat from './components/MirrorChat';
+import { addMessage } from '../../actions';
+import MirrorChat from '../MirrorChat';
 
 const mapStateToProps = state => ({
   chat: state.chat
