@@ -7,6 +7,9 @@ const initialState = {
     users: users
 }
 
+/**
+ * Chat state's reducer.
+ */
 const chat = (state = initialState, action) => {
     switch (action.type) {
         case types.ADD_MESSAGE:

@@ -5,6 +5,7 @@ import './index.scss';
 import App from './components/App';
 import { configureStore } from './configureStore';
 
+// Entry point of the app
 ReactDOM.render(
     <Provider store={configureStore()}>
         <App />
