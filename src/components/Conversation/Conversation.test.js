@@ -1,6 +1,6 @@
 import React from 'react';
 import { expect } from 'chai'
-import { shallow, render } from 'enzyme'
+import { shallow } from 'enzyme'
 import Conversation from './Conversation';
 import Message from '../Message/Message';
 import { messages } from '../../constants/messages'
@@ -8,7 +8,7 @@ import { users } from '../../constants/users'
 
 describe('<Conversation />', () => {
     it('should match its reference snapshot', () => {
-        const wrapper = render(
+        const wrapper = shallow(
             <Conversation
                 messages={messages}
                 users={users}

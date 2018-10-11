@@ -15,7 +15,8 @@ class Conversation extends Component {
      * Scroll to conversation latest message.
      */
     scrollToLatestMessage = () => {
-        this.conversationBottom.parentNode.scrollTop = this.conversationBottom.offsetTop;
+        if(!!this.conversationBottom)
+            this.conversationBottom.parentNode.scrollTop = this.conversationBottom.offsetTop;
     }
 
     /**
