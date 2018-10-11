@@ -4,6 +4,10 @@ import { Container, Row, Col } from 'reactstrap';
 import { FadeTransform, } from 'react-animation-components';
 
 
+/**
+ * Convert a date from ISO format to readable 'en-US' format.
+ * @param {*} ISOString A date to the ISO format.
+ */
 const convertDateFromISOStringToReadableString = ISOString =>
     new Intl.DateTimeFormat('en-US', { hour: '2-digit', minute: '2-digit', year: 'numeric', month: 'short', day: '2-digit' }).format(new Date(Date.parse(ISOString)));
 
@@ -11,6 +15,8 @@ const convertDateFromISOStringToReadableString = ISOString =>
  * Basic chat's message adapting it's view depending of its nature (sent, received).
  */
 const Message = ({ message, sender, currentUserId }) => {
+
+    // Check if message is valid.
     if (!message) {
         return (
             <div className="message-unreadable">

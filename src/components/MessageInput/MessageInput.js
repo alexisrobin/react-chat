@@ -3,6 +3,9 @@ import './MessageInput.scss';
 import { Button, Container, Col, Row } from 'reactstrap';
 import { LocalForm, Control, actions } from 'react-redux-form';
 
+/**
+ * Check if a val is defined and not empty.
+ */
 const required = val => val && val.length;
 
 /**
@@ -15,7 +18,10 @@ class MessageInput extends Component {
      * Reset message's form.
      */
     handleSubmit = values => {
+        // Add new message to the chat.
         this.props.addMessage(values.message, this.props.currentUserId);
+
+        // Reset form's input.
         this.formDispatch(actions.reset('local'));
     }
 

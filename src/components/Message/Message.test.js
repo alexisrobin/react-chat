@@ -24,7 +24,7 @@ describe('<Message />', () => {
         expect(wrapper).to.matchSnapshot()
       })
 
-    it('should renders properly message and timestamp', () => {
+    it('should render properly message and timestamp', () => {
         const wrapper = shallow(
             <Message
                 message={message}
@@ -35,7 +35,7 @@ describe('<Message />', () => {
         expect(wrapper.contains(convertDateFromISOStringToReadableString(message.timestamp))).to.equal(true);
     })
 
-    it('should renders a message unreadable block', () => {
+    it('should render a message unreadable block', () => {
         const wrapper = shallow(
             <Message />
         );

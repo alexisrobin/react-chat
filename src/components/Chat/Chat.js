@@ -4,6 +4,9 @@ import './Chat.scss';
 import Conversation from '../Conversation';
 import MessageInput from '../MessageInput';
 
+/**
+ * Chat representation composed of a conversation between users and a message input.
+ */
 const Chat = ({ messages, users, currentUserId, addMessage }) => {
     return (
         <Container>

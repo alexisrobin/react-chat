@@ -7,7 +7,7 @@ import Message from '../Message';
 const sortByTimestamp = array => array.sort((a, b) => new Date(a.timestamp) - new Date(b.timestamp));
 
 /**
- * Message's list from a user to others.
+ * Conversation between users.
  */
 class Conversation extends Component {
     
@@ -18,10 +18,16 @@ class Conversation extends Component {
         this.conversationBottom.parentNode.scrollTop = this.conversationBottom.offsetTop;
     }
 
+    /**
+     * Ensure to scroll to the latest message when component did mount.
+     */
     componentDidMount() {
         this.scrollToLatestMessage();
     }
 
+    /**
+     * Ensure to scroll to the latest message when component did update.
+     */
     componentDidUpdate() {
         this.scrollToLatestMessage();
     }

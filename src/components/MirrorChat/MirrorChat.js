@@ -2,6 +2,9 @@ import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import Chat from '../Chat';
 
+/**
+ * Display side-by-side two same chat with different current user.
+ */
 const MirrorChat = ({ messages, users, addMessage }) => {
     return (
         <Container>
