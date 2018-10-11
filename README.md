@@ -19,6 +19,7 @@ npm test
 ```
 
 # Project architecture
+The following directory tree represents the react/redux project architecture I've implemented:
 ```
 .
 ├── index.js // App entry point 
